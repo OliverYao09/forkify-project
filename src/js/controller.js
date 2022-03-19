@@ -123,6 +123,10 @@ const newFeature = function () {
   console.log('Welcome to the Application');
 };
 
+const loginFeature = function () {
+  console.log('Welcome to the login feature');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -132,5 +136,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   newFeature();
+  loginFeature();
 };
 init();
